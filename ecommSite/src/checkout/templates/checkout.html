@@ -69,7 +69,7 @@ function stripeTokenHandler(token) {
 {% block content %}
 <div class='row'> 
 	<div class="col-md-6 col-md-offset-2 col-sm-6">
-		<form action="/charge" method="post" id="payment-form"> {% csrf_token %}
+		<form action="/checkout/" method="post" id="payment-form"> {% csrf_token %}
 		  <div class="form-row">
 		    <label for="card-element">
 		      Credit or debit card
